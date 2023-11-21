@@ -7,6 +7,7 @@ int main() {
     printf("Ingrese el numero de columnas: ");
     scanf("%d", &m);
 
+
     int matriz[n][m];
 
     for (int i = 0; i < n; i++) {
@@ -14,7 +15,13 @@ int main() {
             matriz[i][j] = 0;
         }
     }
+
+    for (int i = 0; i < n && i < m; i++) {
+        matriz[i][i] = 1;
+    }
 }
+
+
 
 
 
